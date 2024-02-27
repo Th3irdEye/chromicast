@@ -14,6 +14,7 @@ RUN apt -y install libxdamage1
 RUN apt -y install libxi6
 RUN apt -y install libxtst6
 RUN apt -y install libxrandr2
+RUN apt -y install libasound2
 RUN pip install cefpython3
 RUN pip install numpy
 RUN pip install ndi-python
