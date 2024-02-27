@@ -4,7 +4,7 @@ WORKDIR /usr/src/app
 
 RUN apt update
 RUN apt -y upgrade
-RUN apt install avahi-daemon
+RUN apt -y install avahi-daemon
 RUN systemctl enable --now avahi-daemon
 RUN pip install cefpython3
 RUN pip install numpy
