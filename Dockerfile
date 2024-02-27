@@ -4,8 +4,8 @@ WORKDIR /usr/src/app
 
 RUN apt update
 RUN apt -y upgrade
-RUN apt -y install libavahi-client3
-RUN apt -y install libnss3
+RUN apt install avahi-daemon
+RUN systemctl enable --now avahi-daemon
 RUN pip install cefpython3
 RUN pip install numpy
 RUN pip install ndi-python
