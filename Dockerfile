@@ -15,6 +15,7 @@ RUN apt -y install libxi6
 RUN apt -y install libxtst6
 RUN apt -y install libxrandr2
 RUN apt -y install libasound2
+RUN apt -y install libatk1.0-0
 RUN pip install cefpython3
 RUN pip install numpy
 RUN pip install ndi-python
