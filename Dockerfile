@@ -2,6 +2,8 @@ FROM python:3.9
 
 WORKDIR /usr/src/app
 
+RUN apt update
+RUN apt upgrade
 RUN apt install libavahi-common3
 RUN pip install cefpython3
 RUN pip install numpy
