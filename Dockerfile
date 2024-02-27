@@ -12,6 +12,7 @@ RUN apt -y install libxcomposite1
 RUN apt -y install libxcursor1
 RUN apt -y install libxdamage1
 RUN apt -y install libxi6
+RUN apt -y install libxtst6
 RUN pip install cefpython3
 RUN pip install numpy
 RUN pip install ndi-python
