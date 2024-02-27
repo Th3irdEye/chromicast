@@ -4,7 +4,7 @@ WORKDIR /usr/src/app
 
 RUN apt update
 RUN apt -y upgrade
-RUN apt install libavahi-common3
+RUN apt -y install libavahi-common3
 RUN pip install cefpython3
 RUN pip install numpy
 RUN pip install ndi-python
