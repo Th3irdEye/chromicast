@@ -2,9 +2,9 @@ FROM python:3
 
 WORKDIR /usr/src/app
 
-RUN pip install --no-cache-dir -r cefpython3
-RUN pip install --no-cache-dir -r numpy
-RUN pip install --no-cache-dir -r ndi-python
+RUN pip install cefpython3
+RUN pip install numpy
+RUN pip install ndi-python
 
 COPY . .
 
