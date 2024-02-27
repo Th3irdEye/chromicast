@@ -8,4 +8,4 @@ RUN pip install ndi-python
 
 COPY . .
 
-CMD ["python", "chromicast/chromicast.py", "https://vdo.mcserv.in/?view=Aaron&codec=h264", "1920", "1080"]
+CMD ["python", "chromicast.py", "https://vdo.mcserv.in/?view=Aaron&codec=h264", "1920", "1080"]
