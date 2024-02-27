@@ -9,6 +9,7 @@ RUN apt -y install libavahi-client3
 RUN apt -y install libnss3
 RUN apt -y install libx11-xcb1
 RUN apt -y install libxcomposite1
+RUN apt -y install libxcursor1
 RUN pip install cefpython3
 RUN pip install numpy
 RUN pip install ndi-python
