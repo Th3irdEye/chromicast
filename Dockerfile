@@ -1,4 +1,4 @@
-FROM python:3.9.13-windowsservercore
+FROM python:3.7
 
 WORKDIR /usr/src/app
 
