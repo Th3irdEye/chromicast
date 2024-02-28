@@ -17,6 +17,9 @@ RUN apt -y install libxrandr2
 RUN apt -y install libasound2
 RUN apt -y install libatk1.0-0
 RUN apt -y install libgtk2.0-0
+RUN apt -y install xvfb
+RUN Xvfb :99 -screen 0 1280x720x16 &
+RUN export DISPLAY=:99
 RUN pip install cefpython3
 RUN pip install numpy
 RUN pip install ndi-python
